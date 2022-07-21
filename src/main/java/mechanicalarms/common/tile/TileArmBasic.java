@@ -102,10 +102,8 @@ public class TileArmBasic extends TileArmBase implements ITileWithModularUI {
 
     @Override
     public ModularWindow createWindow(UIBuildContext uiBuildContext) {
-        Text[] var10000 = new Text[]{(new Text("Blue §nUnderlined§rBlue ")).color(3168440), (new Text("Mint")).color(4628111)};
         ModularWindow.Builder builder = ModularWindow.builder(new Size(176, 272));
-        List<Integer> nums = (List) IntStream.range(1, 101).boxed().collect(Collectors.toList());
-        builder.setBackground(new IDrawable[]{ModularUITextures.VANILLA_BACKGROUND}).bindPlayerInventory(uiBuildContext.getPlayer());
+        builder.setBackground( ModularUITextures.VANILLA_BACKGROUND ).bindPlayerInventory( uiBuildContext.getPlayer() );
         return builder.build();
     }
 

@@ -77,7 +77,8 @@ dependencies {
         deobfCompile 'zone.rong:mixinbooter:4.2'
     }
 
-    deobfCompile 'modularui:ModularUI:1.0.3'
+    //deobfProvided('modularui-1.0.3.jar')
+    deobfProvided 'modularui:ModularUI:1.0.4'
 }
 
 sourceSets {
